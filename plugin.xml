@@ -1,21 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-  xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-debuggable" version="1.0.1">
+  xmlns:android="http://schemas.android.com/apk/res/android" 
+  id="cordova-plugin-debuggable" 
+  version="1.0.1">
+
   <name>cordova-plugin-debuggable</name>
   <description>
-		To enable you to set debuggable property of a cordova-android application.
+    To enable you to set debuggable property of a cordova-android application.
   </description>
   <author>Carlos Borda</author>
   <repo>https://github.com/carlos-2024/cordova-plugin-debuggable</repo>
   <license>MIT</license>
+
+  <!-- Engines -->
   <engines>
     <engine name="cordova" version=">=7.0.0"/>
     <engine name="cordova-android" version=">=7.0.0"/>
   </engines>
+
+  <!-- Preferences -->
   <preference name="debuggable" default="false"/>
+
+  <!-- Platform-specific configuration -->
   <platform name="android">
-    <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
-      <application android:debuggable="$debuggable"/>
+    <edit-config 
+      file="AndroidManifest.xml" 
+      target="/manifest/application" 
+      mode="merge">
+      <application android:debuggable="$debuggable" />
     </edit-config>
   </platform>
+
 </plugin>
