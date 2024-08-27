@@ -1,0 +1,25 @@
+{
+  "name": "cordova-plugin-debuggable",
+  "version": "0.0.2",
+  "description": "To enable you to set the debuggable property of a cordova-android application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlos-2024/cordova-plugin-debuggable.git"
+  },
+  "keywords": [
+    "cordova"
+  ],
+  "author": "Carlos Borda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carlos-2024/cordova-plugin-debuggable/issues"
+  },
+  "homepage": "https://github.com/carlos-2024/cordova-plugin-debuggable/issues",
+  "devDependencies": {
+    "pluginpub": "0.0.8"
+  }
+}
